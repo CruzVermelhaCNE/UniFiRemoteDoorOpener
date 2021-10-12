@@ -3,7 +3,7 @@ class Notification {
         this.events = {}
     }
 
-    addHook(eventName, eventCallback) {
+    addEventHook(eventName, eventCallback) {
         if(!(eventName in this.events)) {
             this.events[eventName] = [];
         }
@@ -16,7 +16,7 @@ class Notification {
         }
     }
 
-    removeHook(eventName, eventCallback) {
+    removeEventHook(eventName, eventCallback) {
         if(!(eventName in this.events)) {
             return;
         }
