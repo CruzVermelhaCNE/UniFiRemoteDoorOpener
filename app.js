@@ -10,3 +10,12 @@ require('./hooks/telegram');
 
 
 const telegram = new TelegramNotifications(process.env.TELEGRAM_BOT_TOKEN, TelegramConfig);
+
+const UniFiAccess = require('./unifi_access');
+async function main() {
+    await UniFiAccess.boot();
+    await UniFiAccess.login();
+    await UniFiAccess.openDoor(process.env.UNIFI_DEVICE_ID, process.env.UNIFI_DOOR_NAME);
+}
+
+main();

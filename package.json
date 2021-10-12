@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "node-telegram-bot-api": "^0.54.0"
+    "node-telegram-bot-api": "^0.54.0",
+    "playwright": "^1.15.2"
   }
 }
