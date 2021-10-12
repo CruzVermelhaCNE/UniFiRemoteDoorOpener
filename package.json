@@ -7,5 +7,9 @@
     "app": "node app.js"
   },
   "author": "Miguel Santos",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "node-telegram-bot-api": "^0.54.0"
+  }
 }
