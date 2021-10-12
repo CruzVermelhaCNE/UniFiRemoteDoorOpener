@@ -1,0 +1,21 @@
+{
+    "CHAT_ID": {
+        "messages": {
+            "/echo (.+)": {
+                "event": "TELEGRAM_ECHO"
+            }
+        },
+        "validation": "none"
+    },
+    "GROUP_ID": {
+        "messages": {
+            "/echo (.+)": {
+                "event": "TELEGRAM_ECHO"
+            }
+        },
+        "validation": "user_ids",
+        "validation_userIds": [
+            USER_ID
+        ]
+    }
+}
