@@ -1,0 +1,11 @@
+{
+  "name": "unifiremotedooropener",
+  "version": "0.0.1",
+  "description": "Allows to Remotely open UniFi Access Doors",
+  "main": "app.js",
+  "scripts": {
+    "app": "node app.js"
+  },
+  "author": "Miguel Santos",
+  "license": "MIT"
+}
